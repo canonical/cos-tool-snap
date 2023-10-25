@@ -7,8 +7,26 @@ Published for <img src="https://raw.githubusercontent.com/anythingcodes/slack-em
 
 ## Install
 
-```
+```shell
 sudo snap install cos-tool
 ```
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
+
+
+## How to pack de snap
+
+```shell
+snapcraft pack
+```
+
+```shell
+Launching instance...
+Executed: pull cos-tool
+Executed: build cos-tool
+Executed: stage cos-tool
+Executed: prime cos-tool
+Executed parts lifecycle
+Generated snap metadata
+Created snap package cos-tool_0.1_amd64.snap
+```
