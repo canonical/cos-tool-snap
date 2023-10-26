@@ -22,7 +22,7 @@ parts:
     source: https://github.com/canonical/cos-tool
     source-type: git
     build-snaps:
-      - go
+      - go/1.18/stable
     override-build: |
-      go build -tags netgo --ldflags '-extldflags "-static"'
+      CGO_ENABLED=0 go build -tags netgo --ldflags '-extldflags "-static"'
       cp $CRAFT_PART_BUILD/cos-tool $CRAFT_PART_INSTALL/
